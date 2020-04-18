@@ -1,10 +1,17 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icons/favicon-16x16.png?v=1.7.0" type="image/png" sizes="16x16"><link rel="icon" href="/images/icons/favicon-32x32.png?v=1.7.0" type="image/png" sizes="32x32"><meta property="og:type" content="website">
-<meta property="og:title" content="Zry&#39;s blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icons/favicon-16x16.png?v=1.7.0" type="image/png" sizes="16x16"><link rel="icon" href="/images/icons/favicon-32x32.png?v=1.7.0" type="image/png" sizes="32x32"><meta name="description" content="这篇博客是我个人使用hexo框架和GitHub、coding（或者使用码云gitee）搭建博客的一些经验🌚 可能有一些疏漏请大佬指正🌚🌞 下面这张图是总体的部署思路                      Quick Start                                    准备阶段                                    安装Node">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用hexo搭建个人博客的教程">
+<meta property="og:url" content="http://yoursite.com/2020/04/12/%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%95%99%E7%A8%8B/index.html">
 <meta property="og:site_name" content="Zry&#39;s blog">
+<meta property="og:description" content="这篇博客是我个人使用hexo框架和GitHub、coding（或者使用码云gitee）搭建博客的一些经验🌚 可能有一些疏漏请大佬指正🌚🌞 下面这张图是总体的部署思路                      Quick Start                                    准备阶段                                    安装Node">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://yoursite.com/2020/04/12/%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%95%99%E7%A8%8B/1.jpg">
+<meta property="article:published_time" content="2020-04-12T14:13:35.000Z">
+<meta property="article:modified_time" content="2020-04-18T02:09:50.597Z">
 <meta property="article:author" content="Zry">
-<meta name="twitter:card" content="summary"><meta name="keywords" content="Zry, Zry's blog"><meta name="description" content=""><title>Zry's blog</title><link ref="canonical" href="http://yoursite.com/index.html"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css" type="text/css"><link rel="stylesheet" href="/css/index.css?v=1.7.0"><script>var Stun = window.Stun || {};
+<meta property="article:tag" content="建站">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/2020/04/12/%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%95%99%E7%A8%8B/1.jpg"><meta name="keywords" content="Zry, Zry's blog"><meta name="description" content=""><title>使用hexo搭建个人博客的教程</title><link ref="canonical" href="http://yoursite.com/2020/04/12/%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%95%99%E7%A8%8B/"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css" type="text/css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.css" type="text/css"><link rel="stylesheet" href="/css/index.css?v=1.7.0"><script>var Stun = window.Stun || {};
 var CONFIG = {
   root: '/',
   algolia: undefined,
@@ -27,7 +34,7 @@ var CONFIG = {
   sourcePath: {"js":"js","css":"css","images":"images"},
 };
 
-window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.0"></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">归档</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分类</span></a></div></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">Zry's blog</div><div class="header-banner-info__subtitle"></div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content content-home" id="content"><section class="postlist"><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2020/04/12/%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%95%99%E7%A8%8B/">使用hexo搭建个人博客的教程</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2020-04-12</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2020-04-18</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon"><i class="far fa-file-word"></i></span><span class="post-meta-item__info">字数统计</span><span class="post-meta-item__value">2.4k</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon"><i class="far fa-clock"></i></span><span class="post-meta-item__info">阅读时长</span><span class="post-meta-item__value">15分</span></span></div></header><div class="post-body"><div class="post-excerpt"><p>这篇博客是我个人使用hexo框架和GitHub、coding（或者使用码云gitee）搭建博客的一些经验🌚</p>
+window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.0"></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">归档</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分类</span></a></div></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">Zry's blog</div><div class="header-banner-info__subtitle"></div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><!-- Just used to judge whether it is an article page--><div id="is-post"></div><div class="post"><header class="post-header"><h1 class="post-title">使用hexo搭建个人博客的教程</h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2020-04-12</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2020-04-18</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon"><i class="far fa-file-word"></i></span><span class="post-meta-item__info">字数统计</span><span class="post-meta-item__value">2.4k</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon"><i class="far fa-clock"></i></span><span class="post-meta-item__info">阅读时长</span><span class="post-meta-item__value">15分</span></span></div></header><div class="post-body"><p>这篇博客是我个人使用hexo框架和GitHub、coding（或者使用码云gitee）搭建博客的一些经验🌚</p>
 <p>可能有一些疏漏请大佬指正🌚🌞</p>
 <p>下面这张图是总体的部署思路</p>
 <img src="/2020/04/12/%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%95%99%E7%A8%8B/1.jpg" class="" title="来自酷安大佬@rainy_king_solo">
@@ -282,51 +289,88 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.0"></he
             });
             document.body.appendChild(img);
           });
-      </script></div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2020/03/29/hello-world/">Hello World</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2020-03-29</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2020-03-29</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon"><i class="far fa-file-word"></i></span><span class="post-meta-item__info">字数统计</span><span class="post-meta-item__value">130</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon"><i class="far fa-clock"></i></span><span class="post-meta-item__info">阅读时长</span><span class="post-meta-item__value">1分</span></span></div></header><div class="post-body"><div class="post-excerpt"><p>Welcome to <span class="exturl"><a class="exturl__link" href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>! This is your very first post. Check <span class="exturl"><a class="exturl__link" href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span> for more info. If you get any problems when using Hexo, you can find the answer in <span class="exturl"><a class="exturl__link" href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span> or you can ask me on <span class="exturl"><a class="exturl__link" href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>.</p>
+      </script></div><footer class="post-footer"><div class="post-ending ending"><div class="ending__text">------ 本文结束，感谢您的阅读 ------</div></div><div class="post-copyright copyright"><div class="copyright-author"><span class="copyright-author__name">本文作者: </span><span class="copyright-author__value"><a href="http://yoursite.com">Zry</a></span></div><div class="copyright-link"><span class="copyright-link__name">本文链接: </span><span class="copyright-link__value"><a href="http://yoursite.com/2020/04/12/%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%95%99%E7%A8%8B/">http://yoursite.com/2020/04/12/%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%95%99%E7%A8%8B/</a></span></div><div class="copyright-notice"><span class="copyright-notice__name">版权声明: </span><span class="copyright-notice__value">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" rel="external nofollow" target="_blank">BY-NC-SA</a> 许可协议。转载请注明出处！</span></div></div><div class="post-tags"><span class="post-tags-item"><span class="post-tags-item__icon"><i class="fas fa-tag"></i></span><a class="post-tags-item__link" href="http://yoursite.com/tags/%E5%BB%BA%E7%AB%99/">建站</a></span></div><nav class="post-paginator paginator"><div class="paginator-next"><a class="paginator-next__link" href="/2020/03/29/hello-world/"><span class="paginator-prev__text">Hello World</span><span class="paginator-next__icon"><i class="fas fa-angle-right"></i></span></a></div></nav></footer></div></div><div class="comments" id="comments"><div id="gitalk-container"></div></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><div class="sidebar-nav"><span class="sidebar-nav-toc current">文章目录</span><span class="sidebar-nav-ov">站点概览</span></div><section class="sidebar-toc"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-number">1.</span> <span class="toc-text">
+          Quick Start
+        </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#准备阶段"><span class="toc-number">1.1.</span> <span class="toc-text">
+          准备阶段
+        </span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#安装Node-js"><span class="toc-number">1.1.1.</span> <span class="toc-text">
+          安装Node.js
+        </span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#安装Git"><span class="toc-number">1.1.2.</span> <span class="toc-text">
+          安装Git
+        </span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#配置SSH-key"><span class="toc-number">1.1.3.</span> <span class="toc-text">
+          配置SSH key
+        </span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#添加SSH-Key"><span class="toc-number">1.1.4.</span> <span class="toc-text">
+          添加SSH Key
+        </span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#GitHub"><span class="toc-number">1.1.4.1.</span> <span class="toc-text">
+          GitHub
+        </span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Coding-腾讯码市"><span class="toc-number">1.1.4.2.</span> <span class="toc-text">
+          Coding(腾讯码市)
+        </span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Gitee（阿里码云）"><span class="toc-number">1.1.4.3.</span> <span class="toc-text">
+          Gitee（阿里码云）
+        </span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#安装Hexo"><span class="toc-number">1.1.5.</span> <span class="toc-text">
+          安装Hexo
+        </span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#安装"><span class="toc-number">1.1.5.1.</span> <span class="toc-text">
+          安装
+        </span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#初始化Hexo"><span class="toc-number">1.1.5.2.</span> <span class="toc-text">
+          初始化Hexo
+        </span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#安装依赖文件以及部署形成文件"><span class="toc-number">1.1.5.3.</span> <span class="toc-text">
+          安装依赖文件以及部署形成文件
+        </span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#本地测试Hexo"><span class="toc-number">1.1.6.</span> <span class="toc-text">
+          本地测试Hexo
+        </span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#创建代码仓库"><span class="toc-number">1.2.</span> <span class="toc-text">
+          创建代码仓库
+        </span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#GitHub-1"><span class="toc-number">1.2.1.</span> <span class="toc-text">
+          GitHub
+        </span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#配置githubPage"><span class="toc-number">1.2.1.1.</span> <span class="toc-text">
+          配置githubPage
+        </span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#启用GitHub-Page"><span class="toc-number">1.2.1.2.</span> <span class="toc-text">
+          启用GitHub Page
+        </span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#将本地hexo项目托管到Github"><span class="toc-number">1.2.1.3.</span> <span class="toc-text">
+          将本地hexo项目托管到Github
+        </span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Coding"><span class="toc-number">1.2.2.</span> <span class="toc-text">
+          Coding
+        </span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#配置Coding-Page"><span class="toc-number">1.2.2.1.</span> <span class="toc-text">
+          配置Coding Page
+        </span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#将本地hexo项目托管到Coding"><span class="toc-number">1.2.2.2.</span> <span class="toc-text">
+          将本地hexo项目托管到Coding
+        </span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Gitee"><span class="toc-number">1.2.3.</span> <span class="toc-text">
+          Gitee
+        </span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#配置Gitee-Page"><span class="toc-number">1.2.3.1.</span> <span class="toc-text">
+          配置Gitee Page
+        </span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#将本地hexo项目托管到Gitee"><span class="toc-number">1.2.3.2.</span> <span class="toc-text">
+          将本地hexo项目托管到Gitee
+        </span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#部署到代码仓库"><span class="toc-number">1.2.4.</span> <span class="toc-text">
+          部署到代码仓库
+        </span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#安装hexo-deployer-git插件"><span class="toc-number">1.2.4.1.</span> <span class="toc-text">
+          安装hexo-deployer-git插件
+        </span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#注意事项"><span class="toc-number">1.2.5.</span> <span class="toc-text">
+          注意事项
+        </span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#使用hexo写作"><span class="toc-number">1.3.</span> <span class="toc-text">
+          使用hexo写作
+        </span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#生成新文章"><span class="toc-number">1.3.1.</span> <span class="toc-text">
+          生成新文章
+        </span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Markdown写作"><span class="toc-number">1.3.2.</span> <span class="toc-text">
+          Markdown写作
+        </span></a></li></ol></li></ol></li></ol></section><!-- ov = overview--><section class="sidebar-ov hide"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="/images/icons/tx1.jpg" alt="avatar"></div><p class="sidebar-ov-author__text">Matrix.</p></div><div class="sidebar-ov-social"><a class="sidebar-ov-social-item" href="https://github.com/zryyyy" target="_blank" rel="noopener" data-popover="Github" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-github"></i></span></a><a class="sidebar-ov-social-item" href="1931860504" target="_blank" rel="noopener" data-popover="QQ" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-qq"></i></span></a></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">2</div><div class="sidebar-ov-state-item__name">归档</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--categories" href="/categories/"><div class="sidebar-ov-state-item__count">0</div><div class="sidebar-ov-state-item__name">分类</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" data-popover="知识共享" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg"></a></div></section><div class="sidebar-reading"><div class="sidebar-reading-info"><span class="sidebar-reading-info__text">你已阅读了 </span><span class="sidebar-reading-info__num">0</span></div><div class="sidebar-reading-line"></div></div></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2020</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>Zry's blog</span></div><div><span>由 <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> 强力驱动</span><span> v4.2.0</span><span class="footer__devider">|</span><span>主题 - <a href="https://github.com/liuyib/hexo-theme-stun/" title="Stun" target="_blank" rel="noopener">Stun</a></span><span> v1.7.0</span></div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="https://cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest@latest/canvas-nest.min.js" color="0,0,0" opacity="0.6" count="99" zIndex="-1"></script><script src="https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js"></script><script src="https://cdn.jsdelivr.net/npm/js-md5@latest/src/md5.min.js"></script><script>function loadGitalk () {
+  if (!document.getElementById('gitalk-container')) {
+    return;
+  }
 
-        <h2 id="Quick-Start">
-          <span class="heading-link">Quick Start</span>
-        </h2>
-      
-        <h3 id="Create-a-new-post">
-          <span class="heading-link">Create a new post</span>
-        </h3>
-      <figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></tbody></table></div></figure>
-<p>More info: <span class="exturl"><a class="exturl__link" href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>
+  var gitalk = new Gitalk({
+    id: md5(window.location.pathname.slice(1)),
+    clientID: '038184f3b131cbb8eafd',
+    clientSecret: '4daed04c4787d3df9d90981665b9b5345cb35314',
+    repo: 'zryyyy.github.io',
+    owner: 'zryyyy',
+    admin: ['zryyyy'],
+    distractionFreeMode: 'true',
+    language: 'zh-CN'
+  });
+  gitalk.render('gitalk-container');
+}
 
-        <h3 id="Run-server">
-          <span class="heading-link">Run server</span>
-        </h3>
-      <figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></tbody></table></div></figure>
-<p>More info: <span class="exturl"><a class="exturl__link" href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>
-
-        <h3 id="Generate-static-files">
-          <span class="heading-link">Generate static files</span>
-        </h3>
-      <figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></tbody></table></div></figure>
-<p>More info: <span class="exturl"><a class="exturl__link" href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>
-
-        <h3 id="Deploy-to-remote-sites">
-          <span class="heading-link">Deploy to remote sites</span>
-        </h3>
-      <figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></tbody></table></div></figure>
-<p>More info: <span class="exturl"><a class="exturl__link" href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script></div></div></article></section><nav class="paginator"><div class="paginator-inner"><span class="page-number current">1</span></div></nav></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><section class="sidebar-toc hide"></section><!-- ov = overview--><section class="sidebar-ov"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="/images/icons/tx1.jpg" alt="avatar"></div><p class="sidebar-ov-author__text">Matrix.</p></div><div class="sidebar-ov-social"><a class="sidebar-ov-social-item" href="https://github.com/zryyyy" target="_blank" rel="noopener" data-popover="Github" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-github"></i></span></a><a class="sidebar-ov-social-item" href="1931860504" target="_blank" rel="noopener" data-popover="QQ" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-qq"></i></span></a></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">2</div><div class="sidebar-ov-state-item__name">归档</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--categories" href="/categories/"><div class="sidebar-ov-state-item__count">0</div><div class="sidebar-ov-state-item__name">分类</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" data-popover="知识共享" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg"></a></div></section></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2020</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>Zry's blog</span></div><div><span>由 <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> 强力驱动</span><span> v4.2.0</span><span class="footer__devider">|</span><span>主题 - <a href="https://github.com/liuyib/hexo-theme-stun/" title="Stun" target="_blank" rel="noopener">Stun</a></span><span> v1.7.0</span></div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="https://cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest@latest/canvas-nest.min.js" color="0,0,0" opacity="0.6" count="99" zIndex="-1"></script><script src="/js/utils.js?v=1.7.0"></script><script src="/js/stun-boot.js?v=1.7.0"></script><script src="/js/scroll.js?v=1.7.0"></script><script src="/js/header.js?v=1.7.0"></script><script src="/js/sidebar.js?v=1.7.0"></script></body></html>
+if (false) {
+  loadGitalk();
+} else {
+  window.addEventListener('DOMContentLoaded', loadGitalk, false);
+}</script><script src="/js/utils.js?v=1.7.0"></script><script src="/js/stun-boot.js?v=1.7.0"></script><script src="/js/scroll.js?v=1.7.0"></script><script src="/js/header.js?v=1.7.0"></script><script src="/js/sidebar.js?v=1.7.0"></script></body></html>
