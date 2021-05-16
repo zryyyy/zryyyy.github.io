@@ -142,9 +142,9 @@
     <category term="热门事件" scheme="http://example.com/categories/%E7%83%AD%E9%97%A8%E4%BA%8B%E4%BB%B6/"/>
     
     
-    <category term="流氓公司" scheme="http://example.com/tags/%E6%B5%81%E6%B0%93%E5%85%AC%E5%8F%B8/"/>
-    
     <category term="BAT" scheme="http://example.com/tags/BAT/"/>
+    
+    <category term="流氓公司" scheme="http://example.com/tags/%E6%B5%81%E6%B0%93%E5%85%AC%E5%8F%B8/"/>
     
   </entry>
   
