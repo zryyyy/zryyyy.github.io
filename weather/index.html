@@ -739,7 +739,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 
 <div class='l_main no_sidebar'>
-  <article class="article post white-box reveal md shadow article-type-docs" id="docs" itemscope itemprop="blogPost">
+  <article class="article post white-box reveal md shadow blur article-type-docs" id="docs" itemscope itemprop="blogPost">
   
 
 
@@ -758,6 +758,22 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
 <iframe width=100% height=500 src="https://embed.windy.com/embed2.html?lat=29.908&lon=121.877&detailLat=29.908&detailLon=121.877&width=650&height=450&zoom=8&level=surface&overlay=radar&product=radar&menu=&message=&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=default&metricTemp=default&radarRange=-1" frameborder="0"></iframe>
+
+<div id="tp-weather-widget"></div>
+  <script>
+    (function(a,h,g,f,e,d,c,b){b=function(){d=h.createElement(g);c=h.getElementsByTagName(g)[0];d.src=e;d.charset="utf-8";d.async=1;c.parentNode.insertBefore(d,c)};a["SeniverseWeatherWidgetObject"]=f;a[f]||(a[f]=function(){(a[f].q=a[f].q||[]).push(arguments)});a[f].l=+new Date();if(a.attachEvent){a.attachEvent("onload",b)}else{a.addEventListener("load",b,false)}}(window,document,"script","SeniverseWeatherWidget","//cdn.sencdn.com/widget2/static/js/bundle.js?t="+parseInt((new Date().getTime() / 100000000).toString(),10)));
+    window.SeniverseWeatherWidget('show', {
+      flavor: "slim",
+      location: "WTQFF2YX0JWG",
+      geolocation: true,
+      language: "zh-Hans",
+      unit: "c",
+      theme: "auto",
+      token: "344bd723-ee42-4efe-b031-2841c1e52b9e",
+      hover: "enabled",
+      container: "tp-weather-widget"
+    })
+  </script>
 
 
 
@@ -792,7 +808,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   
 
-  <article class="post white-box reveal shadow" id="comments">
+  <article class="post white-box reveal shadow blur" id="comments">
     <p ct><i class='fad fa-comments'></i> 评论</p>
     
     <div id="valine_container" class="valine_thread">
