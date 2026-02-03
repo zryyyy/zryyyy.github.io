@@ -1,0 +1,19 @@
+/* 1. 默认状态（浅色模式） */
+.dark-only {
+    display: none !important;
+}
+
+.light-only {
+    display: block !important;
+}
+
+/* 2. 当检测到主题变为 dark 时 */
+html[color-scheme="dark"] .light-only,
+html.dark .light-only {
+    display: none !important;
+}
+
+html[color-scheme="dark"] .dark-only,
+html.dark .dark-only {
+    display: block !important;
+}
